@@ -1,0 +1,17 @@
+#skills {
+	white-space: initial;
+}
+
+#contact_info {
+	margin-left: -45%;
+    }
+	
+#fb_icon {
+	margin-left: 20%;
+}
+
+#work_examples_info {
+	display: flex;
+    flex-direction: column;
+
+}

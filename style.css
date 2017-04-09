@@ -1,0 +1,361 @@
+body {
+    font: normal 100% arial;
+}
+
+#green {
+	background: url("images/bg-flame.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+    }
+
+#main1 {
+	box-shadow: 0px 0px 70px 110px rgba(0, 0, 0, 0.99);
+	background-color: rgba(0, 0, 0, 0.99);
+	height: 105em;
+	max-width: 40em;
+	margin: 3% auto 0 auto;
+    }
+	
+#main {
+	max-width: 40em;
+}
+
+#hello {  /*--------------------------------------------HELLO  */
+	text-align: center;
+	width: 100%;
+	position: relative;
+	color: white;
+	margin: 5% auto auto auto;
+	font-size: 1.25em;
+    }
+
+#name {  /*--------------------------------------------NAME  */
+	font-family: 'Carter One', cursive;
+	font-size: 1em;
+	font-family: 'Fredoka One', cursive;
+	color: #008000;
+    }
+
+#profile_pic {	/*--------------------------------------------PROFILE IMAGE  */
+    position: relative;
+	width: 200px;
+	height: 200px;
+    border-radius: 100%;
+	border: 2px solid green;
+	margin: auto;
+	display: block;
+   }
+
+nav { /*--------------------------------------------NAVIGATION off  */
+  list-style-type: none;
+  position: fixed;
+  display: none;
+    }
+
+nav li a {
+  padding: 0.411em;
+  font-size: 1.0625em;
+  font-family: 'Bree Serif', serif;
+  color: #cccccc;
+  display: block;
+  width: 10px;
+  text-decoration: none;
+  -moz-transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  white-space: nowrap;
+    }
+
+nav li a:hover{
+	color: white;
+	text-shadow: 1px 1px 5px white;
+    }
+
+#profile { /*-----------------------------------------------PROFILE  */
+    max-width: 14em;
+	margin: 7% auto auto;
+    }
+
+#profile_icon {
+	position: relative;
+	border-radius: 100px;
+	margin-bottom: -5%;
+	height: 40px;
+	width: 40px;
+	background-image: url("images/icons.jpg");
+	background-position: -110px -35px; /*first one to sides, second one up and down*/
+    }
+
+#profile_info {
+	position: relative;
+	white-space: nowrap;
+    }
+	
+#profile_info ul li:before, #experience_info ul li:before, #skills_info ul li:before, #interests_info ul li:before { /* adjusting all lists style images*/
+	content: url('images/arrow.png');
+	margin-left: -50px;
+	padding-right: 2em;
+	opacity: 0;
+	-webkit-transition-property: opacity, padding-right;
+    -webkit-transition-duration: 0.5s;
+	transition-property: opacity, padding-right;
+    transition-duration: 0.5s;
+    }
+
+#profile_info ul li:hover:before, #experience_info ul li:hover:before, #skills_info ul li:hover:before, #interests_info ul li:hover:before {
+	padding-right: 8px;
+	opacity: 1;
+    }
+
+#profile_underline {
+	height: 1px;
+	width: 0px;
+	box-shadow: 0 0 5px 0px green;
+	margin-top: -6px;
+	margin-left: 50px;
+	-moz-transition: width 0.6s;
+	-webkit-transition: width 0.6s;
+	transition: width 0.6s;
+    }
+
+#experience { /*-------------------------------------------EXPERIENCE  */
+	max-width: 14em;
+	margin: 4% auto auto;
+    }
+
+#experience_icon {
+	position: relative;
+	border-radius: 100px;
+	margin-bottom: -5%;
+	height: 40px;
+	width: 40px;
+	background-image: url("images/icons.jpg");
+	background-position: -303px -35px;
+    }
+
+#experience_info {
+	position: relative;
+    }
+
+#experience_underline {
+	height: 1px;
+	width: 0px;
+	box-shadow: 0 0 5px 0px green;
+	margin-top: -6px;
+	margin-left: 50px;
+	-moz-transition: width 0.8s;
+	-webkit-transition: width 0.8s;
+    transition: width 0.8s;
+    }
+
+#skills { /*--------------------------------------------------SKILLS  */
+    max-width: 14em;
+	margin: 4% auto auto;
+	white-space: nowrap;
+    }
+
+#skills_icon {
+	position: relative;
+	border-radius: 100px;
+	margin-bottom: -5%;
+	height: 40px;
+	width: 40px;
+	background-image: url("images/icons.jpg");
+	background-position:  -206px -227px;
+    }
+
+#skills_info {
+	position: relative;
+    }
+	
+#skills_underline {
+	height: 1px;
+	width: 0px;
+	box-shadow: 0 0 5px 0px green;
+	margin-top: -6px;
+	margin-left: 50px;
+	vertical-align: middle;
+	-moz-transition: width 0.5s;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+    }
+
+#skills_info ul li span {
+	color: green;
+	font-size: 14px;
+	display: none;
+	margin-left: 5px;
+	vertical-align: text-top;
+    }
+
+#work_examples {  /*---------------------------------------------WORK EXAMPLES  */
+    max-width: 14em;
+	margin: 4% auto auto;
+	white-space: nowrap;
+}
+
+#work_examples_icon {
+    position: relative;
+	border-radius: 100px;
+	margin-bottom: -5%;
+	height: 40px;
+	width: 40px;
+	background-image: url("images/icons.jpg");
+	background-position:  -350px -130px;
+}
+
+#work_examples_underline {
+    height: 1px;
+	width: 0px;
+	box-shadow: 0 0 5px 0px green;
+	margin-top: -6px;
+	margin-left: 50px;
+	vertical-align: middle;
+	-moz-transition: width 0.5s;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+}
+
+#work_examples_info {
+    position: relative;
+}
+
+.projects_images {
+	cursor: pointer;
+	border-radius: 15px;
+	border: 1px solid green;
+	margin-top: 10%;
+	margin-left: 20%;
+}
+
+.projects_images:hover {
+	box-shadow: 1px 1px 10px green;
+}
+	
+#interests { /*---------------------------------------------INTERESTS  */
+    max-width: 14em;
+	margin: 4% auto auto;
+    }
+
+#interests_icon {
+	position: relative;
+	border-radius: 100px;
+	margin-bottom: -5%;
+	height: 40px;
+	width: 40px;
+	background-image: url("images/icons.jpg");
+	background-position: -110px -529px; 
+    }
+
+#interests_info {
+	position: relative;
+    }
+
+#interests_underline {
+	height: 1px;
+	width: 0px;
+	box-shadow: 0 0 5px 0px green;
+	margin-top: -6px;
+	margin-left: 50px;
+	-moz-transition: width 0.8s;
+	-webkit-transition: width 0.8s;
+	transition: width 0.8s;
+    }
+
+#contact { /*---------------------------------------------CONTACT  */
+    max-width: 14em;
+	margin: 4% auto auto;
+	white-space: nowrap;
+    }
+
+#contact_icon {
+	position: relative;
+	border-radius: 100px;
+	margin-bottom: -5%;
+	height: 40px;
+	width: 40px;
+	background-image: url("images/icons.jpg");
+	background-position: -157px -35px;
+    }
+
+#contact_underline{
+	height: 1px;
+	width: 0px;
+	box-shadow: 0 0 5px 0px green;
+	margin-top: -6px;
+	margin-left: 50px;
+	-moz-transition: width 0.8s;
+	-webkit-transition: width 0.8s;
+	transition: width 0.8s;
+    }
+
+#contact_info {
+	white-space: nowrap;
+	margin-left: -20%;
+	}
+
+
+#mail_icon {
+	width: 23px;
+	height: 20px;
+	position: relative;
+	padding-right: 1em;
+	
+	}
+
+#phone_icon, #skype_icon {
+	width: 25px;
+	height: 25px;
+	position: relative;
+	padding-right: 1em;
+	}
+
+#fb_icon {
+	width: 70px;
+	height: 25px;
+	margin-left: 22%;
+	margin-top: 2%;
+	border-radius: 5px;
+	}
+
+#fb_icon:hover {
+	border: 1px solid blue;
+	}
+
+div a.icon_name {
+	padding-left: 50px;
+	color: white;
+	line-height: 40px;
+	font-size: 15px;
+	font-family: Bree Serif, serif;
+	}
+
+ul li {  /*  styling every_info sections  */
+	list-style-type: none;
+	color: grey;
+	padding: 0.7em 0em 0.7em 1em;
+	font-family: 'Raleway', cursive;
+	font-size: 0.875em;
+    }
+
+span { /*  fixing spacing in HELLO and PROFILE sections  */
+	letter-spacing:1px;
+	}
+
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: green;
+	}
+
+::selection {
+    color: black;
+    background: green;
+	}
+
+
+
+
+
+
+
